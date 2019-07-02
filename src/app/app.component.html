@@ -1,5 +1,11 @@
 <ul>
-  <li *ngFor="let menuItem of topMenus">
-    <a href="#">{{menuItem.title}}</a>
+  <li *ngFor="let menuItem of topMenus; let i = index; let even = even; let odd = odd">
+    <a href="#" 
+       [class.active]="i === selectedIndex" 
+       [class.even]="even" 
+       [class.odd]="odd" 
+       (click)="handleSelection(i)">
+      {{ menuItem.title }}
+    </a>
   </li>
 </ul>

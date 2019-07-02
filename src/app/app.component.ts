@@ -12,6 +12,7 @@ interface TopMenu {
 })
 export class AppComponent {
   title = '拼多多'
+  selectedIndex = -1
   topMenus: TopMenu[] = [
     {
       title: '热门',
@@ -82,4 +83,9 @@ export class AppComponent {
       link: ''
     }
   ]
+
+  handleSelection(index: number) {
+    this.selectedIndex = index
+  }
+
 }

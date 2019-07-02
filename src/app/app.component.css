@@ -17,3 +17,15 @@ a {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.active {
+  color: red;
+}
+
+.even {
+  color: green;
+}
+
+.odd {
+  color: purple;
+}
